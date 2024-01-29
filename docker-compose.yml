@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  samsdb:
+    image: mongo
+  
+  samsapp:
+    image: ifarhan059/samsbakers:latest
+    depends_on:
+      - samsdb
+
+volumes:
+  mongodb:
+    
+    
